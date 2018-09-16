@@ -46,9 +46,9 @@
 		</video>
 		<h3>NOSOTRAS</h3>
 
-		<div id="somos">
+		<div id="somos" name="conti">
 			<div class="dupla primera">
-				<img src="media/conti.png" style="max-width: 100%; max-height: 100%;     margin-left: -31px;"/>
+				<img src="media/conti.jpg" style="max-width: 100%; max-height: 100%;     margin-left: -31px;"/>
 			</div>
 			<!--/dupla primera-->
 			<div class="dupla segunda" style="text-align: left">
@@ -59,7 +59,7 @@
 				<address><a href="cngahona@uc.cl">cngahona@uc.cl</a></address>
 			</div>
 		</div>
-		<div id="somos">
+		<div id="somos" name="nacha">
 			<div class="dupla primera">
 				<h4>IGNACIA LARA</h4>
 				<h5>poner algo</h5>
@@ -68,7 +68,7 @@
 				<address><a href="mailto:ilara2@uc.cl">ilara2@uc.cl</a></address>
 			</div>
 			<div class="dupla segunda">
-				<img src="media/nacha.png" style="max-width: 100%; max-height: 100%;     margin-right: -31px;"/>
+				<img src="media/nacha.jpg" style="max-width: 100%; max-height: 100%;     margin-right: -31px;"/>
 			</div>
 		</div>
 		<!--/somos-->
@@ -188,12 +188,46 @@
 	</div>
 	<!--/contenido-->
 	<script src="masonry.pkgd.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 	<script>
 		window.onload = function () {
 			var container = document.querySelector('#portafolio');
 			var msnry = new Masonry(portafolio, {
 				itemSelector: '.item'
 			});
+
+			$(window).scroll( function(){
+
+		         /* Check the location of each desired element */
+		         $('[name="conti"]').each( function(i){
+
+		             var bottom_of_object = $(this).position().top + $(this).outerHeight();
+		             var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+		             /* If the object is completely visible in the window, fade it it */
+		             if( bottom_of_window > bottom_of_object ){
+
+		                 $(this).animate({'opacity':'1'},1500);
+
+		             }
+
+		         });
+						 $('[name="nacha"]').each( function(i){
+
+								 var bottom_of_object = $(this).position().top + $(this).outerHeight();
+								 var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+								 /* If the object is completely visible in the window, fade it it */
+								 if( bottom_of_window > bottom_of_object ){
+
+										 $(this).animate({'opacity':'1'},1500);
+
+								 }
+
+						 });
+
+		     });
 		};
 	</script>
 </body>
