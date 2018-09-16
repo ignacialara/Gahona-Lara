@@ -12,23 +12,26 @@ body{
 
 h1, h2, h3, h4{
 	font-weight:700;
-	font-family: 'Quicksand', sans-serif;
-font-family: 'Cabin', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
 
 h1{
 	letter-spacing:0.1em;
-	color:rgba(255,255,255,0.9);
+	color:rgba(255,255,255);
 	text-shadow: 1px 1px 0 #999;
 	text-align:center;
+	font-size: 100px;
+
 }
 
 h2{
 	letter-spacing:0.02em;
-	color:rgba(255,255,255,0.6);
+	color:rgba(255,255,255);
 	padding:0.2em 0;
 	text-shadow: 1px 1px 0 #999;
 	text-align:center;
+	font-size: 50;
+
 }
 
 h3{
@@ -92,6 +95,8 @@ color: rgb(142, 193, 192);
 .dupla a:hover{
 color: rgb(142, 193, 192);
 	text-decoration:underline;
+	font-family: 'Source Sans Pro', sans-serif;
+
 }
 
 .primera{
@@ -102,11 +107,11 @@ color: rgb(142, 193, 192);
 	background-repeat:no-repeat;
 	background-size:auto 100%;
 }
-.primera h4{margin-top; padding: 12% 0% 2% 50%;}
+.primera h4{margin-top; padding: 12% 0% 2% 50%; font-family: 'Roboto', sans-serif;}
 
-.primera h5{padding: 1% 0% 2% 50%;}
+.primera h5{padding: 1% 0% 2% 50%; font-family: 'Roboto', sans-serif;}
 
-.primera p{padding: 1% 0% 2% 50%; s}
+.primera p{padding: 1% 0% 2% 50%; font-family: 'Source Sans Pro', sans-serif;}
 
 .primera address{padding: 1% 0% 2% 50%; font-size:0.9em; font-style:normal; color: rgb(142, 193, 192);}
 
@@ -119,11 +124,11 @@ color: rgb(142, 193, 192);
 	background-size:auto 100%;
 }
 
-.segunda h4{margin-top; padding: 2% 40% 1% 4%;;}
+.segunda h4{margin-top; padding: 2% 40% 1% 4%;font-family: 'Roboto', sans-serif;}
 
-.segunda h5{padding: 2% 40% 1% 4%; }
+.segunda h5{padding: 2% 40% 1% 4%; font-family: 'Roboto', sans-serif; }
 
-.segunda p{padding: 2% 40% 1% 4%;}
+.segunda p{padding: 2% 40% 1% 4%; font-family: 'Source Sans Pro', sans-serif;}
 
 .segunda address{padding: 2% 40% 1% 4%;; font-size:0.9em; font-style:normal; color: rgb(142, 193, 192);}
 
@@ -162,12 +167,14 @@ color: rgb(142, 193, 192);
 .item .text p {
 	margin-top: 5px;
 	font-size: 1vw;
+	font-family: 'Source Sans Pro', sans-serif;
+
 
 }
 
 .item .text h4 {
 	font-size: 22px;
-
+font-family: 'Roboto', sans-serif;
 }
 
 
@@ -201,7 +208,7 @@ footer{
 	width:100%;
 	padding:3em 0 1em 0;
 	text-align:center;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight:700;
 }
 
@@ -209,12 +216,15 @@ footer p{
 	text-transform:uppercase;
 	letter-spacing:0.1em;
 	font-size:0.9em;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(140, 193, 193)
 	}
 
 footer hr{
 	border:2px solid #000;
 	width:10%;
 	margin:2em auto 0 auto;
+	font-family: 'Roboto', sans-serif;
 	}
 
 @media screen and (orientation: portrait){
