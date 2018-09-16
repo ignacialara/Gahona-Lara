@@ -71,7 +71,7 @@ video{
 #somos{
 	width:100%;
 	background:rgb(250,250,250);
-	margin-bottom:2%;
+	margin-bottom:5%;
 	}
 
 .dupla{
@@ -82,50 +82,48 @@ video{
 	}
 
 .dupla a{
-	color:rgba(255,0,0,0.75);
+color: rgb(142, 193, 192);
 	text-decoration:none;
 	font-weight:700;
 }
 
 .dupla a:hover{
-	color:rgba(255,0,0,1);
+color: rgb(142, 193, 192);
 	text-decoration:underline;
 }
 
 .primera{
-	min-height:380px;
+	height:380px;
 	text-align:left;
 	background-color:#FFFF;
-	background-image:url('media/dupla-01.jpg');
 	background-position:top right;
 	background-repeat:no-repeat;
 	background-size:auto 100%;
 }
-.primera h4{padding: 2% 40% 1% 2%;}
+.primera h4{margin-top; padding: 12% 0% 2% 50%;}
 
-.primera h5{padding: 1% 40% 2% 2%; margin-bottom:5em; letter-spacing:0.1em;}
+.primera h5{padding: 1% 0% 2% 50%;}
 
-.primera p{padding: 2% 40% 2% 2%; s}
+.primera p{padding: 1% 0% 2% 50%; s}
 
-.primera address{padding: 2% 40% 2% 2%; font-size:0.9em; font-style:normal;}
+.primera address{padding: 1% 0% 2% 50%; font-size:0.9em; font-style:normal; color: rgb(142, 193, 192);}
 
 .segunda{
-	min-height:380px;
+	height:380px;
 	text-align:right;
 	background-color:#FFFF;
-	background-image:url('media/dupla-02.jpg');
 	background-position:top left;
 	background-repeat:no-repeat;
 	background-size:auto 100%;
 }
 
-.segunda h4{padding: 2% 2% 1% 40%;}
+.segunda h4{margin-top; padding: 2% 40% 1% 4%;;}
 
-.segunda h5{padding: 1% 2% 2% 40%; margin-bottom:5em; letter-spacing:0.1em;}
+.segunda h5{padding: 2% 40% 1% 4%; }
 
-.segunda p{padding: 2% 2% 2% 40%;}
+.segunda p{padding: 2% 40% 1% 4%;}
 
-.segunda address{padding: 2% 2% 2% 40%; font-size:0.9em; font-style:normal;}
+.segunda address{padding: 2% 40% 1% 4%;; font-size:0.9em; font-style:normal; color: rgb(142, 193, 192);}
 
 #somos hr{
 	clear:both;
@@ -135,13 +133,18 @@ video{
 #portafolio{
 	width:100%;
 	padding-bottom:1%;
-	background:linear-gradient(to bottom right, #8CC1C1, #8CC1C1);
 }
 
 .item {
 	width:23%;
 	margin:1%;
 }
+
+.item img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
 .item .text {
 	position:absolute;
 	top:0;
@@ -157,6 +160,7 @@ video{
 .item .text p {
 	margin-top: 5px;
 	font-size: 1vw;
+
 }
 
 .item .text h4 {
@@ -167,13 +171,17 @@ video{
 
 .item:hover .text {
 visibility:visible;
+z-index:1;
+
 }
 .item:hover > .overlay {
     width:100%;
     height:100%;
     position:absolute;
-    background-color:#333;
-    opacity:0.7;
+    background-color:rgb(140, 193, 193);
+    opacity:0.8;
+		z-index:1;
+
 }
 
 .item {
@@ -183,7 +191,7 @@ visibility:visible;
 .item  img{
 	width:100%;
 	height:auto;
-	margin-bottom:-4px;
+	z-index:3
 }
 
 
